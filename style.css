@@ -29,6 +29,55 @@
   font-weight: 700;
 }
 
+html {
+  /* Плавная прокрутка на якорные ссылки */
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  border: 1px solid tomato;
+}
+
+main  {
+  border: 1px solid tomato;
+}
+
+footer {
+  border: 1px solid tomato;
+}
+
+.container{
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  color: tomato;
+  font-size: 24px;
+  transition: ease-in-out 0.3s;
+}
+
+.nav-link:hover {
+  color: black;
+  /* transition: ease-in-out 0.3s; */
 }
