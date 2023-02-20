@@ -45,15 +45,17 @@ body {
 }
 
 header {
-  border: 1px solid tomato;
+  background-color: #829985;
 }
 
 main  {
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
 }
 
 footer {
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
+  background-color: #829985;
+  padding: 20px;
 }
 
 .container{
@@ -72,7 +74,7 @@ footer {
   padding: 0 20px;
   line-height: 50px;
   text-decoration: none;
-  color: tomato;
+  color: #fff;
   font-size: 24px;
   transition: ease-in-out 0.3s;
 }
@@ -82,6 +84,12 @@ footer {
   /* transition: ease-in-out 0.3s; */
 }
 
+.section-profile-photo {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
 
 .code-red {
   color: tomato;
@@ -89,4 +97,18 @@ footer {
 
 .code-blue {
   color: blueviolet;
+}
+
+.footer-container {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rsschool {
+  width: 121px;
+  height: 45px;
+  background-image: url(./assets/svg/rs_school_js.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
