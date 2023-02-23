@@ -60,10 +60,6 @@ body {
 
 .nav-list {
   display: flex;
-  /*! ==================  */
-  /*! ДОБАВИТЬ БУРГЕР ВМЕСТО flex-wrap: wrap;  */
-  flex-wrap: wrap;
-  /*! ==================  */
   justify-content: flex-end;
   align-items: center;
   list-style: none;
@@ -71,7 +67,7 @@ body {
 
 .nav-link {
   position: relative;
-  padding: 0 14px;
+  padding: 0 12px;
   text-decoration: none;
   font-size: 24px;
   font-weight: 400;
@@ -315,6 +311,40 @@ footer {
   background-repeat: no-repeat;
 }
 
+/*? ADAPTIVE  */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: auto;
+  cursor: pointer;
+  user-select: none;
+  z-index: 100;
+}
+
+.burger div {
+  width: 80%;
+  height: 2px;
+  background: #fff;
+  margin: 3px 0;
+  z-index: 100;
+}
+
+.burger.collapsed .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.collapsed .line2 {
+  opacity: 0;
+}
+
+.burger.collapsed .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
 
 
 @media (max-width: 1440px) {
@@ -323,8 +353,70 @@ footer {
   }
 }
 
+@media (max-width: 1024px) {
+  .nav-link {
+    padding: 0 10px;
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 768px) {
   .section {
     width: 100%;
   }
+  .section-profile {
+    flex-direction: column;
+    align-items: center;
+  }  
+  .section-education {
+    border-bottom: 1px solid #672f2f;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    display: none;
+  }
+  .nav-link {
+    font-size: 24px;
+  }
+  .burger {
+    display: flex;
+  }
+
+  .nav.collapsed {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    min-height: 525px;
+    flex-direction: column;
+    background-color: #829985;
+  }
+  .nav-list.collapsed {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-title {
+    font-size: 24px;
+    letter-spacing: 4px;
+  }  
+}
+
+@media (max-width: 410px) {
+  .code {
+    font-size: 14px;
+  }  
 }
