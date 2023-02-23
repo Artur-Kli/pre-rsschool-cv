@@ -33,7 +33,7 @@ I believe that in 2023, my ability to study will help me fill in the missing kno
 
 ## 👩🏼‍🎓 Courses:
 * MODERN FRONT-END WITH JAVASCRIPT AND HTML5 (completed)
-![Belhard Academy](./BELHARD_Artur_Klimashevich.jpg "Certificate")
+![Belhard Academy](./assets/img/BELHARD_Artur_Klimashevich.jpg "Certificate")
 * RS Schools Course «JavaScript/Front-end.» (in progress)
 * JavaScript Manual on [learn.javascript.ru](https://learn.javascript.ru/) (in progress)
 * JavaScript Manual on [w3schools](https://www.w3schools.com/) (in progress)
